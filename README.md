@@ -6,6 +6,8 @@ It is a python program that runs reports against a psql database located on a VM
 
 - [Requirements](#requirements)
 - [Instructions](#instructions)
+- [Customizations](#customizations)
+- [Future Updates](#future updates)
 
 
 ## Requirements
@@ -15,7 +17,7 @@ Download and install the following software and files:
 - Download and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 - Download and install [Vagrant](https://www.vagrantup.com/)
 - Download the [news](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip) data
-- Clone Udacity's [repositiy](https://github.com/udacity/fullstack-nanodegree-vm): 
+- Clone Udacity's [repositiy](https://github.com/udacity/fullstack-nanodegree-vm). This contains the Vagrant config file.
 
 The following python file is required for the project to run correctly.
 - reportrunner.py
@@ -41,3 +43,14 @@ data row 2
 data row n
 ============================================================
 ```
+
+## Customizations
+
+Within the reportrunner.py file's main function, you can add more queries for further reporting by appending information to both the printInfo and queries lists.  The printInfo list adds the title and any text to be added to the end of each row.  The queries list contains just that, queries to be sent to the database.
+
+## Future Updates
+
+A list of out of scope updates/features that may be implemented at a later date:
+- Queries saved in another database, text file, etc instead of hard coded in the python
+- Output of the queries saved in various formats (text, excel, etc.)
+- Front end that provides available reports and recieves results displayed to the browser.
