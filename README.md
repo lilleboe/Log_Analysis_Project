@@ -7,7 +7,7 @@ It is a python program that runs reports against a psql database located on a VM
 - [Requirements](#requirements)
 - [Instructions](#instructions)
 - [Customizations](#customizations)
-- [Future Updates](#future updates)
+- [Enhancements](#enhancements)
 
 
 ## Requirements
@@ -48,7 +48,7 @@ data row n
 
 Within the reportrunner.py file's main function, you can add more queries for further reporting by appending information to both the printInfo and queries lists.  The printInfo list adds the title and any text to be added to the end of each row.  The queries list contains just that, queries to be sent to the database.
 
-## Future Updates
+## Enhancements
 
 A list of out of scope updates/features that may be implemented at a later date:
 - Queries saved in another database, text file, etc instead of hard coded in the python
