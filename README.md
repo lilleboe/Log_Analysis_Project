@@ -33,10 +33,11 @@ The output of running that command will produce three reports that answer the fo
 The reports are in the following format:
 ```
 ============================================================
-Most popular three articles of all time
+Title (question being answered)
 ------------------------------------------------------------
-Candidate is jerk, alleges rival -- 342102 views
-Bears love berries, alleges bear -- 256365 views
-Bad things gone, say good people -- 171762 views
+data row 1
+data row 2
+...
+data row n
 ============================================================
 ```
