@@ -78,12 +78,21 @@ class ReportRunner():
         if not query:
             return None
 
-        db = psycopg2.connect(database=self.dbName)
-        c = db.cursor()
+        db, c = self.db_connect(self.dbName)
         c.execute(query)
         results = c.fetchall()
         db.close()
         return results
+
+    def db_connect(self, db_name):
+        """Connect to the PostgreSQL database.  Returns a database connection."""
+        try:
+            db = psycopg2.connect("dbname={}".format(db_name))
+            c = db.cursor()
+            return db, c
+        except psycopg2.Error as e:
+            print "Unable to connect to database"
+            sys.exit(1) # The easier method
 
     def printer(self, title, end, data):
         '''Produces a readable output'''
