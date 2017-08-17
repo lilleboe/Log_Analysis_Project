@@ -1,4 +1,4 @@
-## Overview
+## Log Analysis Project
 The Log Analysis Project is part of the [Udacity](http://udacity.com) Nanodegree Full Stack Web Developer program. 
 It is a python program that runs reports against a psql database located on a VM.
 
