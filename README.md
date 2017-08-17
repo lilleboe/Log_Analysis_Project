@@ -24,7 +24,10 @@ The following python file is required for the project to run correctly.
 
 ## Instructions
 
-After obtaining the files, downloading and installing the software you are ready to run your reports.  In your vagrant shell and in the same directory your reportrunner.py script is located run this command:
+After starting up Vagrant navigate to the location of your newsdata.sql file.  Here you are going to load the database with the proper tables and data.  Run this command:
+> psql -d news -f newsdata.sql
+
+You should be ready to run your report.  In the same directory your reportrunner.py script is located run this command:
 > python reportrunner.py
 
 The output of running that command will produce three reports that answer the following questions:
